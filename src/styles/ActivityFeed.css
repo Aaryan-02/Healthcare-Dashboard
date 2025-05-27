@@ -1,0 +1,111 @@
+.activity-feed {
+  background: #f3f9ff;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  flex-shrink: 0;
+  height: 180px;
+}
+
+.activity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.activity-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(19 14 124);
+  margin: 0;
+}
+
+.activity-subtitle {
+  font-size: 13px;
+  color: #94a3b8;
+  margin: 0;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100px;
+  padding: 0 8px;
+  gap: 6px;
+}
+
+.chart-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+
+.chart-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  min-height: 70px;
+  justify-content: center;
+}
+
+.chart-bar {
+  width: 3px;
+  border-radius: 2px;
+  min-height: 6px;
+}
+
+.chart-bar.morning {
+  background: #06b6d4;
+}
+
+.chart-bar.afternoon {
+  background: #3b82f6;
+}
+
+.chart-bar.evening {
+  background: #8b5cf6;
+}
+
+.chart-label {
+  font-size: 11px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .activity-feed {
+    padding: 12px;
+    height: 160px;
+  }
+
+  .chart-container {
+    height: 80px;
+    padding: 0 4px;
+    gap: 4px;
+  }
+
+  .chart-bars {
+    min-height: 50px;
+    gap: 1px;
+  }
+
+  .chart-bar {
+    width: 2px;
+  }
+
+  .chart-label {
+    font-size: 10px;
+  }
+
+  .activity-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    margin-bottom: 12px;
+  }
+}
