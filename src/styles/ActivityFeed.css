@@ -1,17 +1,27 @@
+.activity-card {
+  background-color: #f6f9fc;
+  border-radius: 2rem;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  margin: auto;
+  margin-top: 1rem;
+}
+
 .activity-feed {
   background: #f3f9ff;
   border-radius: 16px;
   padding: 16px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   flex-shrink: 0;
-  height: 180px;
+  height: 200px;
+  margin-bottom: 15px;
 }
 
-.activity-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 16px;
+.activity-subtitle {
+  font-size: 13px;
+  color: #94a3b8;
+  margin: 0;
 }
 
 .activity-title {
@@ -21,91 +31,195 @@
   margin: 0;
 }
 
-.activity-subtitle {
-  font-size: 13px;
-  color: #94a3b8;
-  margin: 0;
+.activity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.activity-header h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #3e4a89;
+}
+
+.activity-header p {
+  font-size: 0.9rem;
+  color: #8c8c8c;
 }
 
 .chart-container {
+  width: 100%;
+  height: 160px;
+}
+
+/* Converted Tailwind classes */
+.w-full {
+  width: 100%;
+}
+
+.max-w-5xl {
+  max-width: 64rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.p-10 {
+  padding: 2.5rem;
+}
+
+.shadow-sm {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.flex {
   display: flex;
+}
+
+.justify-between {
   justify-content: space-between;
-  align-items: flex-end;
-  height: 100px;
-  padding: 0 8px;
-  gap: 6px;
 }
 
-.chart-day {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  flex: 1;
-}
-
-.chart-bars {
-  display: flex;
-  align-items: flex-end;
-  gap: 2px;
-  min-height: 70px;
+.justify-center {
   justify-content: center;
 }
 
-.chart-bar {
-  width: 3px;
-  border-radius: 2px;
-  min-height: 6px;
+.items-center {
+  align-items: center;
 }
 
-.chart-bar.morning {
-  background: #06b6d4;
+.items-end {
+  align-items: flex-end;
 }
 
-.chart-bar.afternoon {
-  background: #3b82f6;
+.mb-16 {
+  margin-bottom: 20px;
 }
 
-.chart-bar.evening {
-  background: #8b5cf6;
+.mb-10 {
+  margin-bottom: 25px;
 }
 
-.chart-label {
-  font-size: 11px;
-  color: #64748b;
-  font-weight: 500;
+.mb-6 {
+  margin-bottom: 8px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .activity-feed {
-    padding: 12px;
-    height: 160px;
-  }
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
 
-  .chart-container {
-    height: 80px;
-    padding: 0 4px;
-    gap: 4px;
-  }
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
 
-  .chart-bars {
-    min-height: 50px;
-    gap: 1px;
-  }
+.font-semibold {
+  font-weight: 600;
+}
 
-  .chart-bar {
-    width: 2px;
-  }
+.text-gray-900 {
+  color: #111827;
+}
 
-  .chart-label {
-    font-size: 10px;
-  }
+.text-gray-400 {
+  color: #9ca3af;
+}
 
-  .activity-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
-    margin-bottom: 12px;
+.text-sm {
+  font-size: 13px;
+  line-height: 1.25rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.h-60 {
+  height: 140px;
+}
+
+.h-48 {
+  height: 110px;
+}
+
+.h-60px {
+  height: 48px;
+}
+
+.h-25px {
+  height: 20px;
+}
+
+.h-58px {
+  height: 46px;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.gap-2 {
+  gap: 15px;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.w-2 {
+  width: 5px;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.rounded-t-full {
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+}
+
+.rounded-b-full {
+  border-bottom-left-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+}
+
+.bg-gray-300 {
+  background-color: #d1d5db;
+}
+
+.bg-gray-200 {
+  background-color: #e5e7eb;
+}
+
+.bg-teal-300 {
+  background-color: #5eead4;
+}
+
+.bg-teal-400 {
+  background-color: #2dd4bf;
+}
+
+.bg-blue-800 {
+  background-color: #1e40af;
+}
+
+/* Media queries for responsive design */
+@media (min-width: 768px) {
+  .md\\:gap-4 {
+    gap: 1rem;
   }
 }
